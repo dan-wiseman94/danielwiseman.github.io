@@ -42,9 +42,11 @@
   body {
 	margin: 0;
 	background-color: powderblue; 
-
+	border: 0px;
   }
-
+textarea {
+	resize: none;
+}
 main {
 	padding: 0;
 	margin: 0;
@@ -55,9 +57,12 @@ p.cryptotext {
 	font-size: 2em;
 }
 
-  h1 {
+.topHeader {
+	text-align: center;
 	float: right;
-  }
+	font-size:2.2rem;
+	
+}
   
   /* Style the header */
   .header {
@@ -81,8 +86,11 @@ p.cryptotext {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-size: 0px;
   }
-  
+  .topnav a img {
+	height: 30px;
+  }
   /* Change color on hover */
   .topnav a:hover {
 	background-color: #ddd;
