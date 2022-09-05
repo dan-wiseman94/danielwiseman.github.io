@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" href="mobile-device.css" />
-	<link rel="stylesheet" type="text/css" media="only screen and (min-width: 600; max-width: 1200px)" href="tablet.css" />
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width: 600; max-width: 1000px)" href="tablet.css" />
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1">
 	<meta charset="utf-8"/>
@@ -21,11 +21,11 @@
 
 		<div class="topnav-bg">	
 		<div class="topnav" >
-		  <a href="mailto:dan.wiseman94@gmail.com">Send E-mail (dan.wiseman94@gmail.com) <img src="/images/iconmonstr-email-2.svg" style=""></a>
-		  <a href="https://github.com/dan-wiseman94">Github <img src="/images/iconmonstr-github-1.svg" style=""></a>
-		  <a href="https://gitlab.com/dan-wiseman94">Gitlab <img src="/images/gitlab-logo-500.svg" class="gitlab" style=""></a>
-		  <a href="https://www.linkedin.com/in/daniel-wiseman-5121ab215/">LinkedIn<img src="/images/iconmonstr-linkedin-3.svg" style=""></a>
-		  <a href="https://safe-wildwood-94979.herokuapp.com/">Bookstore Website Concept in Django <img src="/images/python-logo-only.svg" style=""></a>
+		  <a href="mailto:dan.wiseman94@gmail.com">Send E-mail (dan.wiseman94@gmail.com) <img src="/images/iconmonstr-email-2.svg" ></a>
+		  <a href="https://github.com/dan-wiseman94">Github <img src="/images/iconmonstr-github-1.svg" ></a>
+		  <a href="https://gitlab.com/dan-wiseman94">Gitlab <img src="/images/gitlab-logo-500.svg" class="gitlab" ></a>
+		  <a href="https://www.linkedin.com/in/daniel-wiseman-5121ab215/">LinkedIn<img src="/images/iconmonstr-linkedin-3.svg" ></a>
+		  <a href="https://safe-wildwood-94979.herokuapp.com/">Bookstore Website Concept in Django <img src="/images/python-logo-only.svg" ></a>
 		</div>
 		</div>
 
@@ -40,20 +40,33 @@
 
 <hr>
 
-<div class="skillsList" style="padding-left: 5%;">
-	<h1 class="skillsHeading">Skills:</h1>
-	<ul>
-		<li>JavaScript</li>
-		<li>React</li>
-		<li>HTML/CSS</li>
-		<li>NodeJS</li>
-		<li>Python</li>
-		<li>Django</li>
-		<li>Linux</li>
-	</ul>
+<h1 style="padding-left: 5%;" class="skillsHeading">Skills:</h1>
+<div class="skills"style="padding-left: 5%;"> 
+
+	<div class="skillsList">
+		<ul>
+			<li>JavaScript</li>
+			<li>React</li>
+			<li>HTML/CSS</li>
+			<li>NodeJS</li>
+		</ul>
+	</div>
+	<div class="skillsList" >
+		<ul>
+			<li>Python</li>
+			<li>Django</li>
+			<li>Linux</li>
+		</ul>
+	</div>
 </div>
 
-
+<form name="complaintBox" autocomplete="on" style="margin-left:1px; margin-right:1px;" onsubmit="sendComplaint();">
+	<label for="inputComplaint">write any questions, complaints, or comments here:</label><br>
+	<textarea required  type="text" id="inputComplaint" name="inputComplaint" placeholder="Type message here..." ></textarea></br>
+	<label for="email">Your E-mail:    </label><br>
+	<input required  minlength="5" maxlength="100" type="email" id="email" placeholder="Your E-Mail Here"><br>
+	<input type="submit" value="Submit">
+</form>
 
 
 
@@ -73,19 +86,30 @@
 </div>
 </div>
 
-
-
+ <hr>
 </article>
+ <div class="contactSection" style="margin-left: 5px;">
+	 <h2>Contact Me:</h2>
+ <div class="contactButtonContainer"> 
+<a  href="https://github.com/dan-wiseman94"><img class="contactButton" src="/images/iconmonstr-github-1.svg" ></a>
+<a  href="https://gitlab.com/dan-wiseman94"><img src="/images/gitlab-logo-500.svg" class="contactButton" ></a>
+<a  href="https://www.linkedin.com/in/daniel-wiseman-5121ab215/"><img src="/images/iconmonstr-linkedin-3.svg" class="contactButton"></a>
+</div>
+ <img src="/images/phone.svg" style="float:left; width:25px;"><p>: 1-615-545-4085</p> 
+<a  href="mailto:dan.wiseman94@gmail.com"><img style="height:25px;" src="/images/iconmonstr-email-2.svg" >Send E-mail (dan.wiseman94@gmail.com) </a>
+</div>
 
 
 
-<footer> 
+
+
+<footer>
+
+ <p>background image &copy; Daniel Wiseman 2021 Nashville, TN</p>
  <h2><a href="https://danielwiseman.net">https://danielwiseman.net</a></h2>
 </footer>
 
 </main>
-
-
 
 </body>
 

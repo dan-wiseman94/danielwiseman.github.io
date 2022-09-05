@@ -1,17 +1,32 @@
 
-
 p {
 	color: #444444;
 }
 
+textarea {
+	resize: none;
+}
 .crypto {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 }
 .cryptoContainer {
-	padding: 8%;
 	
+	
+	border: 2px solid grey;
+	border-radius: 10px;
+	padding: 5px;
+	
+}
+.contactButtonContainer {
+	display: flex;
+	justify-content: space-evenly;
+}
+.contactButton {
+	min-height: 50px;
+	width: 50px;
+	flex: 1;
 }
 .cryptotext {
 	font-size: 2rem;
@@ -20,7 +35,7 @@ p {
 h3 {
 	color: #555555;
 }
-h1 {
+.topHeader {
 	text-align: center;
 	float: right;
 	font-size:2.2rem;
@@ -60,15 +75,12 @@ h1 {
 	margin: auto;
 
 	margin-left: 25%;
+	border: ridge 3px darkgray;
+	box-shadow: 0 4px 8x 0 rgba(0, 0, 0, 0.2), 0 62px 0px 0 rgba(0, 0, 0, 0.19);
 	margin-right: 25%;
 	background: lightblue;
 	padding-bottom: 0%;
-	border: ridge 3px darkgray;
-	box-shadow: 0 4px 8x 0 rgba(0, 0, 0, 0.2), 0 62px 0px 0 rgba(0, 0, 0, 0.19);
-
   }
-  
- 
 
   /* Style the header */
   .header {
@@ -80,14 +92,13 @@ h1 {
   /* Style the top navigation bar */
   .topnav {
 	display: flex;
-	overflow: hidden;
 	font-weight: bold;
 	text-align: center;
 	border: 0px 3px solid #555555;
+	background-color: #333;
   }
   
   .topnav-bg {
-
 	background-color: #333;
   }
   /* Style the topnav links */
@@ -95,11 +106,14 @@ h1 {
 	
 	color: #f2f2f2;
 	text-align: center;
-	padding:  10px 0px;
+	padding:  10px 100px;
 	text-decoration: none;
-	margin: auto;
+	margin: 0;
   }
-  
+  .topnav a img {
+	height: 25px;
+  }
+
   /* Change color on hover */
   .topnav a:hover {
 	background-color: #ddd;
